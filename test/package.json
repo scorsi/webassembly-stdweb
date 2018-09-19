@@ -1,0 +1,13 @@
+{
+  "name": "webassembly-stdweb-assemblyscript-test",
+  "main": "index.js",
+  "devDependencies": {
+    "assemblyscript": "github:AssemblyScript/assemblyscript"
+  },
+  "scripts": {
+    "asbuild:untouched": "asc assembly/index.ts -b build/untouched.wasm -t build/untouched.wat --sourceMap --validate",
+    "asbuild:optimized": "asc assembly/index.ts -b build/optimized.wasm -t build/optimized.wat --sourceMap --validate --optimize --noDebug",
+    "asbuild:optimized:wasm-only": "asc assembly/index.ts -b build/optimized.wasm --validate --optimize --noDebug",
+    "asbuild": "npm run asbuild:untouched && npm run asbuild:optimized"
+  }
+}
