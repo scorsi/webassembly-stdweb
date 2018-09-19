@@ -1,0 +1,8 @@
+{
+  "name": "webassembly-stdweb",
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": "https://github.com/scorsi/webassembly-stdweb.git",
+  "author": "scorsi <sylvain.corsini@gmail.com>",
+  "license": "MIT"
+}
